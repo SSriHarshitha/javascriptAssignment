@@ -8,22 +8,24 @@ function leapYear()
     if(year_value%100 == 0)
     {
         if(year_value%400 ==0){
-            document.writeln(year_value + " is a leap year");
+            document.getElementById("result3").innerHTML= year_value + " is a leap year";
+            // document.writeln(year_value + " is a leap year");
         } 
         else{
-            document.writeln(year_value + " is not a leap year");
+            document.getElementById("result3").innerHTML= year_value + " is not a leap year";
+            // document.writeln(year_value + " is not a leap year");
         }
     }
     else
     {
         if(year_value%4==0)
         {
-            document.writeln(year_value + " is a leap year");
+            document.getElementById("result3").innerHTML= year_value + " is a leap year";
+            // document.writeln(year_value + " is a leap year");
         }
         else{
-            document.writeln(year_value + " is not a leap year");
+            document.getElementById("result3").innerHTML= year_value + " is not a leap year";
+            // document.writeln(year_value + " is not a leap year");
         }
     }
 }
-
-// leapYear(2122);

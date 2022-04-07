@@ -2,9 +2,10 @@
 
 document.getElementById("btn6").onclick=argumentType;
 
-function argumentType(){
-    document.writeln("Type of the arugment is : " + typeof(document.getElementById("inputbox6").value));
+function argumentType(temp){
+    const arr=[4,44,2232,2423523,4418987,8723974];
+    document.getElementById("result6").innerHTML= "Type of the arugment is : " + typeof(arr);
+    // document.writeln("Type of the arugment is : " + typeof(arr));
     // return typeof(temp);
 }
-// const arr=[4,44,2232,2423523,4418987,8723974];
-// console.log("Type of the arugment is " + argumentType(arr));
+// document.getElementById("result6").innerHTML= argumentType(23);

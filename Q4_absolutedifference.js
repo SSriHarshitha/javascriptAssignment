@@ -7,12 +7,12 @@ function absoluteDifferenceNum(){
     let temp = num - 19;
     if(temp>0)
     {
-        document.writeln("Result for the absolute difference of numbers : \n" + temp**3);
+        document.getElementById("result4").innerHTML= "Result for the absolute difference of numbers : " + temp**3;
+        // document.writeln("Result for the absolute difference of numbers : \n" + temp**3);
     }
     else
     {
-        document.writeln("Result for the absolute difference of numbers : \n" +  temp*-1);
+        document.getElementById("result4").innerHTML= "Result for the absolute difference of numbers : " + temp-1;
+        // document.writeln("Result for the absolute difference of numbers : \n" +  temp*-1);
     }
 }
-
-// console.log("Result for the absolute difference of numbers : \n" + absoluteDifferenceNum(25));

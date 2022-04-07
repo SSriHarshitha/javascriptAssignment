@@ -11,13 +11,12 @@ for(let i=0;i<myArray.length;i++)
     let str="",len=0;
     str = myArray[i].toString();
     len = str.length;
-    // console.log(myArray[i] +" " + "length:" +  len);
     if(len>maxLen){
         maxLen=len;
         longestWord = str;
     }
 }
-
-document.writeln("Longest word is : " + longestWord + " <br> the length is :" + maxLen);
+document.getElementById("result7").innerHTML= "Longest word is : " + longestWord + " <br> the length is :" + maxLen;
+// document.writeln("Longest word is : " + longestWord + " <br> the length is :" + maxLen);
 }
 
