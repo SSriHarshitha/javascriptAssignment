@@ -27,4 +27,3 @@ async function loadUsers(){
     }
 }
 document.getElementById("click").onclick = loadUsers;
-// document.addEventListener("click",loadUsers);
