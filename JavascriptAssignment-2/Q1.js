@@ -5,7 +5,7 @@ class Shape
         this.shape = shape;
     }
     getShapeInformation(){
-        console.log("Now We getting the information of Shape of the selected one");
+        document.getElementById("input").innerHTML = "Now We getting the information of Shape of the selected one";
     }
 }
 
@@ -22,8 +22,8 @@ class Circle extends Shape
     getShapeInformation()
     {
         super.getShapeInformation();
-        console.log("name of the shape : "+this.name+ " shape : "+this.shape);
-        console.log("Now calculating the area of the circle");
+        document.getElementById("input1").innerHTML = "The area of the circle is "+ this.getArea() +  "<br> name of the shape : "+this.name+ " shape : "+this.shape 
+                                                        + " <br> Now calculating the area of the circle";
     }
 }
 
@@ -42,14 +42,15 @@ class Rectangle extends Shape
     getShapeInformation()
     {
         super.getShapeInformation();
-        console.log("name of the shape : "+this.name+ " shape : "+this.shape);
-        console.log("Now Calculating the area of rectangle");
+        document.getElementById("input2").innerHTML = "The area of the rectangle is "+ this.getArea() +"<br> name of the shape : "+this.name+ " shape : "+this.shape + 
+                                                        " <br> Now Calculating the area of rectangle";
     }
 }
 cir = new Circle("circle","round shape", 5);
+cir.getArea();
 cir.getShapeInformation();
-console.log( cir.getArea());
 
 rec = new Rectangle("rectangle","rectangular shape",10,20);
+rec.getArea();
 rec.getShapeInformation();
-console.log(rec.getArea());
+
